@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; font-synthesis: none; }
+body { @apply min-h-screen bg-slate-50 font-sans text-slate-900 antialiased; }
+#root { @apply min-h-screen; }
+button, a, input { @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700; }
+.glass-panel { @apply rounded-lg border border-slate-200 bg-white shadow-sm; }
+.glass-panel .text-white { @apply text-slate-900; }
+.glass-panel .text-slate-300 { @apply text-slate-600; }
+.glass-panel .text-slate-400 { @apply text-slate-500; }
+.analysis-progress { animation: analysis-slide 1.4s ease-in-out infinite alternate; }
+@keyframes analysis-slide { from { transform: translateX(-15%); } to { transform: translateX(215%); } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; } }

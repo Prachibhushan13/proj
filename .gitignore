@@ -1,0 +1,36 @@
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+node_modules/
+dist/
+build/
+.env
+frontend/.env
+backend/.env
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/artifacts/*
+!backend/artifacts/.gitkeep
+*.log
+coverage/
+htmlcov/
+tmp/
+.mongo_data/
+
+# Generated datasets, experiment outputs, and local editor state
+datasets/Celeb-DF-v2/
+datasets/Celeb-DF-v2.zip
+datasets/celebdf_features/
+evaluation_results/
+experiments/results/
+evaluation_predictions.csv
+frontend/tsconfig.tsbuildinfo
+
+# Local backup copies created during experimentation
+*.backup_*
+*.bak
+*.save
